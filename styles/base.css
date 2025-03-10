@@ -84,7 +84,10 @@ main {
 
 .card-container {
     display: grid;
+    grid-template-columns: 1fr;
+    /* Default: Stack on small screens */
     gap: 1rem;
+    padding: 1rem;
 }
 
 .card {
@@ -93,6 +96,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Footer (Matches Header & Stays at Bottom) */
 footer {
