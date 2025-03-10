@@ -1,0 +1,26 @@
+@media (min-width: 768px) {
+
+    /* Navigation Layout */
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 1rem;
+    }
+
+    /* Grid Layout for Main Content */
+    .card-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* Learning Activities should be twice the width */
+    .learning-activities {
+        grid-column: span 2;
+    }
+}
