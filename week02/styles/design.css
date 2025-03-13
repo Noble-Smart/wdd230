@@ -1,0 +1,62 @@
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* Updated banner to replace marquee */
+.banner {
+    padding: 1rem;
+    background-color: #e5d7d7;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two equal columns */
+    gap: 1rem;
+    /* Adds spacing between elements */
+}
+
+/* Ensure h2 spans both columns */
+h2 {
+    color: navy;
+    text-align: left;
+    /* Changed from center to left */
+    grid-column: span 2;
+    /* Makes h2 span across both columns */
+}
+
+article p {
+    text-align: justify;
+}
+
+/* Improved color contrast */
+.callout {
+    color: #0a0808;
+    /* Changed text color for better contrast */
+    background-color: #e5d7d7;
+    /* Adjusted background color */
+    padding: 1rem;
+    /* Fixed padding issue */
+    border-radius: 5px;
+    /* Added slight rounding for better design */
+}
+
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: .5rem 0;
+    font-size: smaller;
+}
