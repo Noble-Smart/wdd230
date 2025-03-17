@@ -1,91 +1,166 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
-/* Header */
+/* Header Styles */
 header {
     display: flex;
-    flex-direction: column;
-    /* Stack items vertically */
     align-items: center;
-    padding: 1rem;
+    justify-content: space-between;
+    /* Keeps elements apart */
     background-color: #005f73;
+    padding: 1rem;
     color: white;
 }
 
-.profile-img {
-    width: 120px;
-    /* Adjust size if needed */
-    height: 120px;
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    /* Makes the image circular */
-    object-fit: cover;
     border: 3px solid white;
-    /* Optional: Adds a white border */
+    margin-right: 10px;
 }
 
 header span {
-    margin-top: 0.5rem;
-    /* Adds spacing between image and name */
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 
-/* Navigation */
+/* Dark Mode Button */
+#darkModeToggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: auto;
+    /* Pushes it to the right */
+}
+
+/* Navigation Styles */
 nav {
     background-color: #333;
-    padding: 0.5rem;
+    padding: 10px;
+    text-align: center;
 }
 
+/* Hide nav menu by default on small screens */
 nav ul {
-    list-style: none;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
+    background: #333;
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    /* Push below header */
+    left: 0;
 }
+
+/* Show menu when open */
+.menu-open {
+    display: flex !important;
+}
+
 
 nav ul li {
-    margin: 0.5rem 0;
+    display: inline-block;
+    background: #333;
+    /* Individual rectangular nav items */
+    padding: 10px 15px;
+    border-radius: 5px;
+    /* Rounded edges */
 }
 
+/* Navigation Hover Effects */
 nav ul li a {
     text-decoration: none;
     color: white;
-    background-color: #0077b6;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    /* Smooth effect */
+}
+
+nav ul li:hover {
+    background: #007f8b;
+    /* Slight color change on hover */
+    transform: scale(1.1);
+    /* Slight pop-out effect */
+}
+
+/* Hamburger Menu */
+.hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 15px;
     display: block;
-    font-size: 1.1rem;
-    transition: background 0.3s ease;
 }
 
-nav ul li a:hover {
-    background-color: #0096c7;
+/* Show menu when open */
+.menu-open {
+    display: flex !important;
+    flex-direction: column;
 }
 
-/* Main Content */
-main {
-    padding: 2rem;
-    flex: 1;
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: white;
 }
 
+.dark-mode header {
+    background-color: #003f5c;
+}
+
+.dark-mode nav ul li {
+    background: #333;
+}
+
+.dark-mode nav ul li a {
+    color: lightgray;
+}
+
+.dark-mode ul li:hover {
+    background: #003f5c;
+    /* Slight color change on hover */
+    transform: scale(1.1);
+    /* Slight pop-out effect */
+}
+
+.dark-mode .hamburger {
+    color: white;
+}
+
+.dark-mode .card {
+    background: #333;
+    color: white;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode footer {
+    background: #003f5c;
+}
+
+/* Card Styles */
 .card-container {
     display: grid;
     grid-template-columns: 1fr;
-    /* Default: Stack on small screens */
     gap: 1rem;
     padding: 1rem;
 }
@@ -97,8 +172,7 @@ main {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-/* Footer (Matches Header & Stays at Bottom) */
+/* Footer */
 footer {
     background: #005f73;
     color: white;

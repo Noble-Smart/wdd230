@@ -1,13 +1,24 @@
 @media (min-width: 768px) {
 
-    /* Navigation Layout */
+    /* Display nav horizontally */
     nav ul {
+        display: flex !important;
         flex-direction: row;
         justify-content: center;
+        position: static;
+        width: auto;
+        background: #333;
     }
 
     nav ul li {
-        margin: 0 1rem;
+        margin: 5px;
+        background: #333;
+        border-radius: 5px;
+    }
+
+    .hamburger {
+        display: none;
+        /* Hide hamburger on larger screens */
     }
 
     /* Grid Layout for Main Content */
@@ -17,10 +28,5 @@
         gap: 1.5rem;
         max-width: 800px;
         margin: auto;
-    }
-
-    /* Learning Activities should be twice the width */
-    .learning-activities {
-        grid-column: span 2;
     }
 }
