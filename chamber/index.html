@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lagos Chamber of Commerce">
+    <meta property="og:title" content="Lagos Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:url" content="https://yourdomain.com/chamber">
+    <title>Lagos Chamber of Commerce</title>
+    <link rel="icon" href="./images/Nigerian-Coat-of-Arms.png">
+    <link rel="stylesheet" href="./styles/normalise.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css" media="screen and (min-width: 768px)">
+    <script defer src="./scripts/menu.js"></script>
+    <script defer src="./scripts/getdates.js"></script>
+    <script defer src="./scripts/weather.js"></script>
+    <script defer src="./scripts/spotlight.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/Nigerian-Coat-of-Arms.png" alt="Lagos Chamber Logo">
+        <h1>Lagos Chamber of Commerce</h1>
+        <nav>
+            <button id="hamburgerBtn" class="hamburger">☰</button>
+            <ul id="navMenu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <main>
+            <section class="hero">
+                <img src="./images/Lagos-Lekki-Ikoyi-bridge.jpg" alt="Lagos Ikoyi Bridge">
+                <a href="#" class="cta-button">Join the Chamber</a>
+            </section>
+
+            <div class="cards-container">
+                <!-- Events Section -->
+                <section class="card events">
+                    <h2>Upcoming Events</h2>
+                    <article>
+                        <h3>Business Networking Conference</h3>
+                        <p>Join top entrepreneurs and business leaders at the Lagos Chamber Business Networking Event.</p>
+                        <p><strong>Date:</strong> April 12, 2025</p>
+                        <p><strong>Time:</strong> 10:00 AM - 4:00 PM</p>
+                        <p><strong>Venue:</strong> Eko Hotel & Suites, Lagos</p>
+                    </article>
+                </section>
+            
+                <!-- Weather Section -->
+                <section class="card weather">
+                    <h2>Current Weather</h2>
+                    <p><span id="temperature">--</span>°C</p>
+                    <p id="condition">Loading...</p>
+                    <p>Humidity: <span id="humidity">--</span>%</p>
+                    <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+                </section>
+            </div>
+            
+            <!-- Spotlight Section -->
+            <div class="spotlight-container">
+                <section class="card spotlight">
+                    <h2>Featured Business</h2>
+                    <h3>Zenith Tech Solutions</h3>
+                    <p>Leading provider of digital transformation and fintech solutions for Lagos businesses.</p>
+                </section>
+            
+                <section class="card spotlight">
+                    <h2>Industry Leader</h2>
+                    <h3>Lagos Agro Ventures</h3>
+                    <p>Pioneering sustainable agriculture and food processing solutions in Nigeria.</p>
+                </section>
+            
+                <section class="card spotlight">
+                    <h2>Innovative Startup</h2>
+                    <h3>Green Energy Lagos</h3>
+                    <p>Developing renewable energy solutions to drive sustainable business growth.</p>
+                </section>
+            </div>
+            
+        </main>
+
+
+        <footer>
+            <p>&copy; 2025 Lagos Chamber of Commerce</p>
+            <p>Noble Ginika Onwuemeka | WDD 230 Project</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </footer>
+</body>
+
+</html>

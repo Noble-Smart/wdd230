@@ -1,0 +1,72 @@
+/* MEDIA QUERIES FOR LARGER SCREENS */
+@media (min-width: 768px) {
+
+    /* Horizontal Navigation */
+    nav ul {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        background: none;
+        width: auto;
+        transform: none;
+    }
+
+    nav ul li {
+        padding: 10px 15px;
+    }
+
+    /* Hide Hamburger on Large Screens */
+    .hamburger {
+        display: none;
+    }
+
+    /* Header & Footer - Increased Height for Visual Balance */
+    header,
+    footer {
+        height: 80px;
+        padding: 15px 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+        max-height: 450px;
+    }
+
+    .hero img {
+        max-height: 450px;
+    }
+
+    /* Cards Layout - Adjusted for Wider Screens */
+    .cards-container {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    /* Events & Weather Layout */
+    .events {
+        flex: 2;
+        /* Takes 2/3 of the space */
+    }
+
+    .weather {
+        flex: 1;
+        /* Takes 1/3 of the space */
+    }
+
+    /* Spotlight Section */
+    .spotlight-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .spotlight-container .card {
+        width: 30%;
+        /* Equal width for 3 cards */
+    }
+}
