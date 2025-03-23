@@ -21,10 +21,17 @@
     }
 
     /* Header & Footer - Increased Height for Visual Balance */
-    header,
     footer {
-        height: 80px;
+        height: 100px;
         padding: 15px 20px;
+    }
+
+    header {
+        font-size: 14px;
+        /* Reduce text size */
+        padding: 10px 15px;
+        /* Adjust padding */
+        height: 100px;
     }
 
     /* Hero Section */

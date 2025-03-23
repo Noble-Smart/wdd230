@@ -21,6 +21,7 @@ header {
     color: white;
     height: 60px;
     position: relative;
+    font-size: 10px;
 }
 
 /* LOGO */
@@ -69,7 +70,7 @@ nav ul.show {
 /* MENU ITEMS */
 nav ul li {
     padding: 10px;
-   
+
 }
 
 nav ul li:last-child {
@@ -86,7 +87,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background: rgba(67, 48, 8, 0.1);
-    color:black ;
+    color: black;
 }
 
 /* HERO SECTION */
