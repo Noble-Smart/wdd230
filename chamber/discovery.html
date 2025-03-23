@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lagos Chamber of Commerce">
+    <meta property="og:title" content="Lagos Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:url" content="https://yourdomain.com/chamber">
+    <title>Lagos Chamber of Commerce</title>
+    <link rel="icon" href="./images/Nigerian-Coat-of-Arms.png">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/discovery.css">
+    <script defer src="./scripts/discovery.js"></script>
+    <script defer src="./scripts/menu.js"></script>
+    <script defer src="./scripts/sidebar.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <img src="./images/Nigerian-Coat-of-Arms.png" alt="Lagos Chamber Logo">
+        <h1>Lagos Chamber of Commerce</h1>
+        <nav>
+            <button id="hamburgerBtn" class="hamburger">☰</button>
+            <ul id="navMenu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join Us</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="discover-grid">
+        <aside class="sidebar">
+            <h2>Visitor Info</h2>
+            <p id="visit-message"></p>
+
+            <h2>Quick Lagos Stats</h2>
+            <ul>
+                <li>Population: 14 million+</li>
+                <li>Major Industries: Finance, Trade, Tourism</li>
+                <li>Main Attractions: Lekki Conservation, National Theatre</li>
+            </ul>
+
+            <h2>Upcoming Events</h2>
+            <p>Business Expo - April 15</p>
+            <p>Trade Fair - May 20</p>
+
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button id="prevMonth">&lt;</button>
+                    <span id="currentMonth"></span>
+                    <button id="nextMonth">&gt;</button>
+                </div>
+                <table class="calendar">
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-body"></tbody>
+                </table>
+            </div>
+
+            <div class="clock-container">
+                <p>Current Time: <span id="clock"></span></p>
+            </div>
+
+            </div>
+
+
+
+        </aside>
+
+        <section>
+            <div class="gallery-container">
+                <h2 class="gallery-title">Explore Lagos</h2>
+            </div>
+            <div class="gallery">
+                <div class="card">
+                    <img src="./images/Lagos central skyline.jpg" loading="lazy" alt="Lagos view">
+                    <p class="caption">A stunning view of Lagos cityscape.</p>
+                </div>
+                <div class="card">
+                    <img src="./images/lagos-market.jpg" loading="lazy" alt="Market scene">
+                    <p class="caption">A bustling Lagos market.</p>
+                </div>
+                <div class="card">
+                    <img src="./images/lekki-conservative-resort.jpg" loading="lazy" alt="Lekki Conservation">
+                    <p class="caption">Lekki Conservation Centre's beautiful nature walk.</p>
+                </div>
+                <div class="card">
+                    <img src="./images/National-Theatre-Lagos-Nigeria.webp" loading="lazy" alt="National Theatre">
+                    <p class="caption">The iconic National Theatre of Lagos.</p>
+                </div>
+                <div class="card">
+                    <img src="./images/Lagos-Lekki-Ikoyi-bridge.jpg" loading="lazy" alt="Lagos-Lekki-Ikoyi-bridge">
+                    <p class="caption">Scenic view of Lagos Lekki Ikoyi Bridge.</p>
+                </div>
+                <div class="card">
+                    <img src="./images/lagos-mainland-bridge.webp" loading="lazy" alt="Third Mainland Bridge">
+                    <p class="caption">The Third Mainland Bridge connecting Lagos.</p>
+                </div>
+                <div class="card">
+                    <img src="./images/tarkwa-bay-bech.jpg" loading="lazy" alt="Tarkwa Bay Beach">
+                    <p class="caption">Tarkwa Bay Beach.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Lagos Chamber of Commerce</p>
+        <p>Noble Ginika Onwuemeka | WDD 230 Project</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
