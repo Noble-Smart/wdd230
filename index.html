@@ -39,6 +39,15 @@
     </nav>
 
     <main>
+
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="Temple Image" width="1500" height="750">
+            </picture>
+            <div class="hero-text">Aba Nigeria Temple</div>
+        </section>
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="card-container">
             <section class="card">
@@ -59,6 +68,13 @@
                 <p>Number of Visits: <span id="visits">0</span></p>
             </section>
         </div>
+        <section class="map">
+            <h3>Location</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.63648067068!2d3.1191409800816845!3d6.5480282427902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1743346247093!5m2!1sen!2sng"
+                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
 
     <footer>
