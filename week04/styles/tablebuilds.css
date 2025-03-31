@@ -1,0 +1,46 @@
+/* General table styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border: 2px solid #333;
+    /* Added a solid border around the table */
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Table caption styling */
+caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Table headers */
+th {
+    background-color: #005f73;
+    color: white;
+    padding: 10px;
+    border: 2px solid #333;
+    /* Borders for table headers */
+}
+
+/* Table cells */
+td {
+    padding: 10px;
+    border: 2px solid #333;
+    /* Borders for table cells */
+}
+
+/* Zebra striping using nth-child */
+tbody tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e0e0e0;
+}
